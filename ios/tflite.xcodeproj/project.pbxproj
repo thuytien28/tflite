@@ -15,7 +15,6 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* tfliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tfliteTests.m */; };
-		4CAB6F9585B39C48C3FDA09C /* libPods-tflite-tfliteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CAF53C9BDAB9A2513CD115 /* libPods-tflite-tfliteTests.a */; };
 		7CAAE93094A554B46BE5F425 /* libPods-tflite-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B2D9DA9776BCBAF3157936 /* libPods-tflite-tvOSTests.a */; };
 		7FFDCC91846C9BE3AF932E89 /* libPods-tflite-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8F8B9604ADA36AFE530A94 /* libPods-tflite-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -52,7 +51,6 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = tflite/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = tflite/main.m; sourceTree = "<group>"; };
 		1696178AF6820A5DA947031C /* libPods-tflite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tflite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		25CAF53C9BDAB9A2513CD115 /* libPods-tflite-tfliteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tflite-tfliteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B2D9DA9776BCBAF3157936 /* libPods-tflite-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tflite-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* tflite-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tflite-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* tflite-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tflite-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,9 +60,7 @@
 		4C8F8B9604ADA36AFE530A94 /* libPods-tflite-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tflite-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F7062078702FB8979B0F41 /* Pods-tflite-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tflite-tvOS.release.xcconfig"; path = "Target Support Files/Pods-tflite-tvOS/Pods-tflite-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = tflite/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		99FE3E7F9572EDCD19D2AB07 /* Pods-tflite-tfliteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tflite-tfliteTests.debug.xcconfig"; path = "Target Support Files/Pods-tflite-tfliteTests/Pods-tflite-tfliteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6B5CC33640ED0EBA92647CB /* Pods-tflite-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tflite-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-tflite-tvOSTests/Pods-tflite-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		ABFAEDC08DDF61E9ECA64274 /* Pods-tflite-tfliteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tflite-tfliteTests.release.xcconfig"; path = "Target Support Files/Pods-tflite-tfliteTests/Pods-tflite-tfliteTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EE6A7C4FFC5100ED81C8163B /* Pods-tflite-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tflite-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-tflite-tvOSTests/Pods-tflite-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CAB6F9585B39C48C3FDA09C /* libPods-tflite-tfliteTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +123,6 @@
 			children = (
 				4C16D54CDDAF3A94C84A9033 /* Pods-tflite.debug.xcconfig */,
 				37E5A493BAECA506196C7172 /* Pods-tflite.release.xcconfig */,
-				99FE3E7F9572EDCD19D2AB07 /* Pods-tflite-tfliteTests.debug.xcconfig */,
-				ABFAEDC08DDF61E9ECA64274 /* Pods-tflite-tfliteTests.release.xcconfig */,
 				3313AAB684779DB935714B06 /* Pods-tflite-tvOS.debug.xcconfig */,
 				55F7062078702FB8979B0F41 /* Pods-tflite-tvOS.release.xcconfig */,
 				EE6A7C4FFC5100ED81C8163B /* Pods-tflite-tvOSTests.debug.xcconfig */,
@@ -158,7 +151,6 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				1696178AF6820A5DA947031C /* libPods-tflite.a */,
-				25CAF53C9BDAB9A2513CD115 /* libPods-tflite-tfliteTests.a */,
 				4C8F8B9604ADA36AFE530A94 /* libPods-tflite-tvOS.a */,
 				28B2D9DA9776BCBAF3157936 /* libPods-tflite-tvOSTests.a */,
 			);
@@ -205,11 +197,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "tfliteTests" */;
 			buildPhases = (
-				6B313FCBAC2F2BF123C22C38 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				4D5AE9F3BEC226A8F5DD7A22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -393,46 +383,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		4D5AE9F3BEC226A8F5DD7A22 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-tflite-tfliteTests/Pods-tflite-tfliteTests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tflite-tfliteTests/Pods-tflite-tfliteTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6B313FCBAC2F2BF123C22C38 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-tflite-tfliteTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		724435CE956FE43046164E0D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -610,7 +560,6 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99FE3E7F9572EDCD19D2AB07 /* Pods-tflite-tfliteTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -633,7 +582,6 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABFAEDC08DDF61E9ECA64274 /* Pods-tflite-tfliteTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
