@@ -60,12 +60,24 @@
 
 import React from 'react';
 import {View, Text} from 'react-native';
-import {Camera} from 'expo-camera';
+// import {Camera} from 'expo-camera';
+import {RNCamera} from 'react-native-camera';
+import * as tf from '@tensorflow/tfjs';
 import {cameraWithTensors} from '@tensorflow/tfjs-react-native';
 
-const TensorCamera = cameraWithTensors(Camera);
+// const TensorCamera = cameraWithTensors(Camera);
 
 export default class MyComponent extends React.Component {
+  state = {
+    isTfReady: false,
+  };
+
+  async componentDidMount() {
+    await tf.ready();
+    this.setState({isTfReady: true});
+    console.log(this.state.isTfReady);
+  }
+
   handleCameraStream(images, updatePreview, gl) {
     const loop = async () => {
       const nextImageTensor = images.next().value;
@@ -103,24 +115,26 @@ export default class MyComponent extends React.Component {
 
     return (
       <View>
-        <Text>{'a'}</Text>
-        <TensorCamera
-          // Standard Camera props
-          style={{
-            zIndex: 0.5,
-            width: 200,
-            height: 200,
-          }}
-          type={Camera.Constants.Type.front}
-          // Tensor related props
-          cameraTextureHeight={textureDims.height}
-          cameraTextureWidth={textureDims.width}
-          resizeHeight={200}
-          resizeWidth={152}
-          resizeDepth={3}
-          onReady={this.handleCameraStream}
-          autorender={true}
-        />
+        <Text>{this.state.isTfReady ? 'Ready' : 'Waiting'}</Text>
+        {/* {this.state.isTfReady && (
+          <TensorCamera
+            // Standard Camera props
+            style={{
+              zIndex: 0.5,
+              width: 200,
+              height: 200,
+            }}
+            type={Camera.Constants.Type.front}
+            // Tensor related props
+            cameraTextureHeight={textureDims.height}
+            cameraTextureWidth={textureDims.width}
+            resizeHeight={200}
+            resizeWidth={152}
+            resizeDepth={3}
+            onReady={this.handleCameraStream}
+            autorender={true}
+          />
+        )} */}
       </View>
     );
   }

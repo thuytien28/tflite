@@ -20,6 +20,7 @@
     "expo-gl-cpp": "^10.0.0",
     "react": "16.13.1",
     "react-native": "0.63.4",
+    "react-native-camera": "^3.42.0",
     "react-native-fs": "^2.16.6",
     "react-native-permissions": "^3.0.0",
     "react-native-unimodules": "^0.12.0"

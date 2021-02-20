@@ -3,6 +3,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 require_relative '../node_modules/react-native-unimodules/cocoapods.rb'
 
 platform :ios, '11.0'
+install! 'cocoapods', :disable_input_output_paths => true
 # use_frameworks!
 
 target 'tflite' do
@@ -32,7 +33,33 @@ target 'tflite' do
   use_flipper!
   post_install do |installer|
     flipper_post_install(installer)
+
+    installer.pods_project.targets.each do |target|
+      if target.name == "React-Core.common-AccessibilityResources"
+        target.remove_from_project
+      end
+    end
   end
+  # use_flipper!
+
+  # post_install do |installer|
+  #   flipper_post_install(installer)
+  #   installer.pods_project.targets.each do |target|
+
+  #     # The following is needed to ensure the "archive" step works in XCode.
+  #     # It removes React & Yoga from the Pods project, as it is already included in the main project.
+  #     # Without this, you'd see errors when you archive like:
+  #     # "Multiple commands produce ... libReact.a"
+  #     # "Multiple commands produce ... libyoga.a"
+
+  #     targets_to_ignore = %w(React yoga)
+      
+  #     if targets_to_ignore.include? target.name
+  #       target.remove_from_project
+  #     end
+
+  #   end
+  # end
 end
 
 target 'tflite-tvOS' do
